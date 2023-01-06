@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Slider</title>
+</head>
+<body>
+    <div class="container">
+        <div class="column left">
+            <button class="btn-change" id="left"><</button>
+        </div>
+        <div class="column container-images" onmouseenter="startSlide()" onmouseleave="stop()">
+            <img class="thumbs slide" id="one" src="./imgs/anime.jpg" alt="anime" srcset="">
+            <img class="thumbs slide" id="two" src="./imgs/gato.jpg" alt="gato de botas" srcset="">
+            <img class="thumbs slide" id="three" src="./imgs/onca.jpg" alt="onça pintada" srcset="">
+            <img class="thumbs slide" id="four" src="./imgs/anime2.jpg" alt="anime2" srcset="">
+        </div>
+        <div class="column right" >
+            <button class="btn-change" id="right">></button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

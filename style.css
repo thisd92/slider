@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+}
+
+.column{
+    width: 33%;
+}
+
+.container-images{
+    display: flex;
+    overflow: hidden;
+}
+
+.thumbs{
+    width: 100%;
+}
+
+.btn-change{
+    width: 50%;
+    height: max-content;
+    align-self: center;
+    font-size: 100px;
+    background-color: transparent;
+    border: none;
+}
+
+.column.left{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.column.right{
+    display: flex;
+    flex-direction: row;
+}
+
+#two, #three, #four{
+    display: none;
+}
