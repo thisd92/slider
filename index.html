@@ -11,21 +11,46 @@
     <div class="mainContent">
         <h1>Slider no Modal</h1>
         <button id="btnModal">Open Modal</button>
+        <footer class="footer">
+            <div class="logo">
+                <a href="http://dev-th.com.br"><img
+                    src="http://dev-th.com.br/busca-cnpj/static/media/LogoDevTH.0dc427fae3ec2235b753.png" alt=""></a>
+              </div>
+              <div class="container-social">
+                <a href="https://github.com/thisd92">
+                  <img src="http://dev-th.com.br/src/assets/imgs/github.png" class="icon" width="35" alt="">
+                </a>
+                <a href="https://www.linkedin.com/in/thiago-dutra-a8359a206/">
+                  <img src="http://dev-th.com.br/src/assets/imgs/linkedin.png" class="icon" width="35" alt="">
+                </a>
+                <a href="https://www.instagram.com/ts_dutra/">
+                  <img src="http://dev-th.com.br/src/assets/imgs/instagram.png" class="icon" width="35" alt="">
+                </a>
+                <a href="https://www.facebook.com/thiago.dutra.18/">
+                  <img src="http://dev-th.com.br/src/assets/imgs/facebook.png" class="icon" width="35" alt="">
+                </a>
+              </div>
+        </footer>
     </div>
     <div id="myModal" class="modal">
-        <div class="container modal-content">
-            <div class="column left">
-                <button class="btn-change" id="left"><</button>
+        <div class="modal-content">
+            <div class="container">
+                <div class="column left">
+                    <button class="btn-change" id="left"><</button>
+                </div>
+                <div class="column container-images" onmouseenter="startSlide()" onmouseleave="stop()">
+                    <img class="thumbs slide" id="one" src="./imgs/anime.jpg" alt="anime" srcset="">
+                    <img class="thumbs slide" id="two" src="./imgs/gato.jpg" alt="gato de botas" srcset="">
+                    <img class="thumbs slide" id="three" src="./imgs/onca.jpg" alt="onça pintada" srcset="">
+                    <img class="thumbs slide" id="four" src="./imgs/anime2.jpg" alt="anime2" srcset="">
+                </div>
+                <div class="column right" >
+                    <button class="btn-change" id="right">></button>
+                    <span class="close">X</span>
+                </div>
             </div>
-            <div class="column container-images" onmouseenter="startSlide()" onmouseleave="stop()">
-                <img class="thumbs slide" id="one" src="./imgs/anime.jpg" alt="anime" srcset="">
-                <img class="thumbs slide" id="two" src="./imgs/gato.jpg" alt="gato de botas" srcset="">
-                <img class="thumbs slide" id="three" src="./imgs/onca.jpg" alt="onça pintada" srcset="">
-                <img class="thumbs slide" id="four" src="./imgs/anime2.jpg" alt="anime2" srcset="">
-            </div>
-            <div class="column right" >
-                <button class="btn-change" id="right">></button>
-                <span class="close">X</span>
+            <div class="instructions">
+                <span>Fique com o mouse em cima da imagem para iniciar a troca automática</span>
             </div>
         </div>
     </div>

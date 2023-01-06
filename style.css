@@ -1,7 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Yeon Sung";
+}
+
+body{
+    background-color: #e2e2e2;
 }
 
 .mainContent{
@@ -11,15 +18,16 @@
 
 .mainContent h1{
     text-align: center;
-    margin-top: 200px;
+    margin-top: 25%;
 }
 
 #btnModal{
     padding: 10px;
     text-decoration: none;
+    font-size: 20px;
     color: #000;
-    background-color: #EEE;
-    width: 20%;
+    background-color: #c7c7c7;
+    width: 15%;
     margin: 30px auto;
     border-radius: 10px;
 }
@@ -55,7 +63,7 @@
     background-color: #fefefe;
     margin: 15% auto;
     /* 15% from the top and centered */
-    padding: 20px;
+    padding: 5px;
     border: 1px solid #888;
     width: 80%;
     /* Could be more or less, depending on screen size */
@@ -86,6 +94,8 @@
 .container-images {
     display: flex;
     overflow: hidden;
+    box-shadow: 2px 4px 4px 1px #949494;
+    margin: 0 5px;
 }
 
 .thumbs {
@@ -93,7 +103,7 @@
 }
 
 .btn-change {
-    width: 50%;
+    width: max-content;
     height: max-content;
     align-self: center;
     font-size: 100px;
@@ -117,3 +127,37 @@
 #four {
     display: none;
 }
+
+.instructions{
+    padding: 10px;
+    text-align: center;
+}
+
+.instructions span{
+    font-size: 24px;
+}
+
+footer{
+    display: flex;
+    width: 100%;
+    background-color: #343a40;
+    height: 80px;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    border-top: 1px solid black;
+  }
+  
+  .logo img{
+    width: 80px;
+  }
+  
+  .container-social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container-social a{
+    padding: 3px;
+  }

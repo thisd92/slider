@@ -16,7 +16,7 @@ window.onclick = (e) => {
     }
 }
 
-let images = document.querySelectorAll('img');
+let images = document.getElementsByClassName("thumbs");
 let size = images.length;
 let slideAtual = 0;
 let tmpSlider;
