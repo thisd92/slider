@@ -8,18 +8,25 @@
     <title>Slider</title>
 </head>
 <body>
-    <div class="container">
-        <div class="column left">
-            <button class="btn-change" id="left"><</button>
-        </div>
-        <div class="column container-images" onmouseenter="startSlide()" onmouseleave="stop()">
-            <img class="thumbs slide" id="one" src="./imgs/anime.jpg" alt="anime" srcset="">
-            <img class="thumbs slide" id="two" src="./imgs/gato.jpg" alt="gato de botas" srcset="">
-            <img class="thumbs slide" id="three" src="./imgs/onca.jpg" alt="onça pintada" srcset="">
-            <img class="thumbs slide" id="four" src="./imgs/anime2.jpg" alt="anime2" srcset="">
-        </div>
-        <div class="column right" >
-            <button class="btn-change" id="right">></button>
+    <div class="mainContent">
+        <h1>Slider no Modal</h1>
+        <button id="btnModal">Open Modal</button>
+    </div>
+    <div id="myModal" class="modal">
+        <div class="container modal-content">
+            <div class="column left">
+                <button class="btn-change" id="left"><</button>
+            </div>
+            <div class="column container-images" onmouseenter="startSlide()" onmouseleave="stop()">
+                <img class="thumbs slide" id="one" src="./imgs/anime.jpg" alt="anime" srcset="">
+                <img class="thumbs slide" id="two" src="./imgs/gato.jpg" alt="gato de botas" srcset="">
+                <img class="thumbs slide" id="three" src="./imgs/onca.jpg" alt="onça pintada" srcset="">
+                <img class="thumbs slide" id="four" src="./imgs/anime2.jpg" alt="anime2" srcset="">
+            </div>
+            <div class="column right" >
+                <button class="btn-change" id="right">></button>
+                <span class="close">X</span>
+            </div>
         </div>
     </div>
     <script src="index.js"></script>

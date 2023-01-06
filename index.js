@@ -1,3 +1,21 @@
+const modal = document.getElementById("myModal");
+const btnModal = document.getElementById("btnModal")
+const span = document.getElementsByClassName("close")[0];
+
+btnModal.onclick = () => {
+    modal.style.display = "block";
+}
+
+span.onclick = () => {
+    modal.style.display = "none";
+}
+
+window.onclick = (e) => {
+    if(e.target == modal){
+        modal.style.display = "none";
+    }
+}
+
 let images = document.querySelectorAll('img');
 let size = images.length;
 let slideAtual = 0;
